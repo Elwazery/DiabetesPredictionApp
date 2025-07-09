@@ -6,7 +6,7 @@ from catboost import CatBoostClassifier
 
 # Load the trained model
 try:
-    model = joblib.load(r"C:\DiabetesPredictionByte\diabetes_final_model.pkl")
+    model = joblib.load("diabetes_final_model.pkl")
 except Exception as e:
     st.error(f"❌ Failed to load model: {e}")
     st.stop()
